@@ -1,341 +1,203 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-
-    <!-- Todo: put here your site title -->
     <title>Anh My Buis | Data scientist</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="Anh My Buis | Data scientist" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.scss" />
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <meta name="keywords" content="data science, IA, machine learning, portfolio" />
+    <meta name="description" content="Anh My Buis | Data scientist & Ingénieure IA" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="#about">Profil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
+        <h1 class="hero-title">
           Bonjour et bienvenue dans mon portefolio. 
           Je m'appelle <span class="text-color-main">Anh My Buis</span>, Ingénieure IA
         </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >En savoir plus</a
-          >
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">En savoir plus</a>
         </p>
       </div>
     </section>
-    <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
+    <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">Mon profil</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
+        <h2 class="section-title">Mon profil</h2>
+        <div class="about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              alt="Profile Image"
+              class="img-fluid"
+              src="assets/profile.jpg"
+              alt="Profile Image"
+            />
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                Ingénieure IA, Data scientist, spécialisée dans les modèles LLM avec expérience avérée dans l’application des LLM à des solutions de chatbot dans le domaine de l’assurance.
-
-              </p>
-              <p class="about-wrapper__info-text">
-                Quelque soit le domaine, j'ai toujours été curieuse, et l'IA fait parti de mon terrain de jeu.
-                En dehors de la tech, j'aime également la musique, et le dessin. 
-              </p>
-                <p class="about-wrapper__info-text">
-                Actuellement en recherche d'une structure prête à m'accueillir, 
-                je souhaite m'investir pleinement pour découvrir les réalités du monde professionnel, 
-                comprendre ses enjeux et y apporter ma motivation ainsi que ma volonté d'apprendre.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  Voir mon CV
-                </a>
-              </span>
-            </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Ingénieure IA, Data scientist, spécialisée dans les modèles LLM avec expérience avérée dans l'application des LLM à des solutions de chatbot dans le domaine de l'assurance.
+            </p>
+            <p class="about-wrapper__info-text">
+              Quelque soit le domaine, j'ai toujours été curieuse, et l'IA fait parti de mon terrain de jeu.
+              En dehors de la tech, j'aime également la musique, et le dessin. 
+            </p>
+            <p class="about-wrapper__info-text">
+              Actuellement en recherche d'une structure prête à m'accueillir, 
+              je souhaite m'investir pleinement pour découvrir les réalités du monde professionnel, 
+              comprendre ses enjeux et y apporter ma motivation ainsi que ma volonté d'apprendre.
+            </p>
+            <span class="cv-button">
+              <a
+                target="_blank"
+                class="cta-btn cta-btn--resume"
+                href="assets/resume.pdf"
+              >
+                Voir mon CV
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </section>
-    <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
+    <!-- Projects Section -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projets</h2>
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Aide à la navigation des drones (UAV)</h3>
-                <div>
-                  <p class="mb-4">
-                  Projet de groupe de Deep Learning, portant sur la mise en place un réseau de neurones, destiné à 
-                  assister un drone dans l'estimation de la distance le séparant de l'obstacle le plus proche. 
-                  </br>
-                  </br>
-                  Les données utilisées sont disponibles sur le site de l'Imperial College London, contenant 288 trajectoires linéaires de drone
-                  qui se déplace dans des endroits différences. 
-</br>
-</br>
-                  Chaque trajectoire est sous forme de séquence d'images associées aux valeurs de distance à la collision pour 3 directions différentes correspondant à 
-                  l'angle [-30°, 0°, 30°] pour la caméra.
-</br>
-</br>
-                  Avant l'entraînement du modèle, un travail de prétraitement et d'augmentation de données ont été nécessaires afin d'optimiser leur exploitation.
-
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Aide à la navigation des drones (UAV)</h3>
+              <div>
+                <p class="project-description">
+                Projet de groupe de Deep Learning, portant sur la mise en place un réseau de neurones, destiné à 
+                assister un drone dans l'estimation de la distance le séparant de l'obstacle le plus proche.
+                <br><br>
+                Les données utilisées sont disponibles sur le site de l'Imperial College London, contenant 288 trajectoires linéaires de drone
+                qui se déplace dans des endroits différences.
+                <br><br>
+                Chaque trajectoire est sous forme de séquence d'images associées aux valeurs de distance à la collision pour 3 directions différentes correspondant à 
+                l'angle [-30°, 0°, 30°] pour la caméra.
+                <br><br>
+                Avant l'entraînement du modèle, un travail de prétraitement et d'augmentation de données ont été nécessaires afin d'optimiser leur exploitation.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="cta-btn cta-btn--hero" href="#!">Voir le projet</a>
+                <a class="cta-btn text-color-main" href="#!">Code source</a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/projetDL.png"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <img
+                alt="UAV Navigation Project"
+                class="img-fluid"
+                src="assets/projetDL.png"
+              />
             </div>
           </div>
-          <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-Contrôle de Youtube par reconnaissance des gestes de la main</h3>
-                <div>
-                  <p class="mb-4">
-                  Projet de groupe de Computer Vision, consistant à la mise en place d'une solution de reconnaissance gestuelle,
-                  permettant de contrôler la lecture d'une vidéo YouTube, via des actions telles que "play", "pause" ou "avance rapide".
-
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
+          <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Contrôle de Youtube par reconnaissance des gestes de la main</h3>
+              <div>
+                <p class="project-description">
+                Projet de groupe de Computer Vision, consistant à la mise en place d'une solution de reconnaissance gestuelle,
+                permettant de contrôler la lecture d'une vidéo YouTube, via des actions telles que "play", "pause" ou "avance rapide".
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="cta-btn cta-btn--hero" href="#!">Voir le projet</a>
+                <a class="cta-btn text-color-main" href="#!">Code source</a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <img
+                alt="YouTube Gesture Control Project"
+                class="img-fluid"
+                src="assets/project.jpg"
+              />
             </div>
           </div>
-          <!-- /END Project -->
- <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-Entraînement d'un agent autonome sur Super Mario Bros</h3>
-                <div>
-                  <p class="mb-4">
-                  Projet en binôme de Deep Reinforcement Learning, portant sur l'implémentation de l'algorithme
-                  Double Deep Q-Learning sur Super Mario Bros, avec la librairie OpenAI.
-                  
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-Détection de polypharmacies nocives</h3>
-                <div>
-                  <p class="mb-4">
-                   Projet en binôme de Big Data, consistant au 
-                   développement d'un modèle de détection des polypharmacies à risque en analysant des données massives 
-                   de prescriptions médicales à l'aide d'algorithmes de machine learning et de règles d'association.
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  Voir le rapport
-                </a>
 
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Entraînement d'un agent autonome sur Super Mario Bros</h3>
+              <div>
+                <p class="project-description">
+                Projet en binôme de Deep Reinforcement Learning, portant sur l'implémentation de l'algorithme
+                Double Deep Q-Learning sur Super Mario Bros, avec la librairie OpenAI.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="cta-btn cta-btn--hero" href="#!">Voir le projet</a>
+                <a class="cta-btn text-color-main" href="#!">Code source</a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <img
+                alt="Mario RL Project"
+                class="img-fluid"
+                src="assets/project.jpg"
+              />
             </div>
           </div>
-          <!-- /END Project -->
+
+          <!-- Project 4 -->
+          <div class="project-item">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Détection de polypharmacies nocives</h3>
+              <div>
+                <p class="project-description">
+                Projet en binôme de Big Data, consistant au 
+                développement d'un modèle de détection des polypharmacies à risque en analysant des données massives 
+                de prescriptions médicales à l'aide d'algorithmes de machine learning et de règles d'association.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="cta-btn cta-btn--hero" href="#!">Voir le rapport</a>
+              </div>
+            </div>
+            <div class="project-wrapper__image">
+              <img
+                alt="Harmful Polypharmacy Project"
+                class="img-fluid"
+                src="assets/project.jpg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
+        <div class="contact-wrapper">
           <p class="contact-wrapper__text">Pour me contacter par mail :</p>
           <a
-            rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:anhmy00@gmail.com"
@@ -344,60 +206,28 @@ Détection de polypharmacies nocives</h3>
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
+    <!-- Footer Section -->
+    <footer class="footer">
       <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
+        <a href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://linkedin.com/in/anh-my-buis-054a3215b" target="_blank">
+          <a href="https://linkedin.com/in/anh-my-buis-054a3215b" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/Mimitore" target="_blank">
+          <a href="https://github.com/Mimitore" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          © 2025 - Anh My Buis
         </p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
-
-    <script defer type="module" src="index.js"></script>
   </body>
 </html>
