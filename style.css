@@ -1,7 +1,7 @@
 /* CUSTOM VARIABLES */
 :root {
---primary-color: #02aab0;
---secondary-color: #00cdac;
+--primary-color: #9B0E29;
+--secondary-color: #CF9F37;
 --white-color: #fff;
 --dark-color: #333333;
 --light-grey: #f8f9fa;
@@ -87,9 +87,14 @@ font-size: 3rem;
 margin-bottom: 2rem;
 }
 .text-color-main {
-color: var(--white-color);
-background-color: rgba(0, 0, 0, 0.1);
+color: var(--secondary-color);
+border: 2px solid var(--secondary-color);
+background-color:var(transparent);
 padding: 0.2rem 0.5rem;
+}
+.text-color-main:hover{
+background-color: var(--secondary-color);
+color: var(--white-color);
 }
 .cta-btn {
 display: inline-block;
@@ -99,12 +104,13 @@ font-weight: bold;
 transition: all 0.3s;
 }
 .cta-btn--hero {
-background-color: transparent;
+background-color: var(--primary-color) ;
 border: 2px solid var(--white-color);
 color: var(--white-color);
 }
 .cta-btn--hero:hover {
 background-color: var(--white-color);
+border: 2px solid var(--primary-color);
 color: var(--primary-color);
 }
 .cta-btn--resume {
@@ -114,10 +120,6 @@ border: none;
 }
 .cta-btn--resume:hover {
 background-color: var(--secondary-color);
-}
-.text-color-main {
-color: var(--white-color);
-text-decoration: underline;
 }
 /* ABOUT SECTION */
 #about {
